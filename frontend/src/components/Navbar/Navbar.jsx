@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 function Navbar() {
   const [cartCount, setCartCount] = useState(0);
