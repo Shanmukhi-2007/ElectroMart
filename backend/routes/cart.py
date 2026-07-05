@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, Query, status
 from pydantic import BaseModel, Field
 import json
 import os
@@ -71,7 +71,7 @@ def add_to_cart(item: CartItem):
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to add item to cart")
 
 @router.put("/cart/{item_id}")
-def update_cart_item(item_id: int, quantity: int = Field(..., ge=0)):
+def update_cart_item(item_id: int, quantity: int = Query(..., ge=0)):
     """Update quantity of an item in cart"""
     try:
         cart = load_cart()

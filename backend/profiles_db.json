@@ -1,0 +1,7 @@
+{
+  "default": {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "+91 9999999999"
+  }
+}

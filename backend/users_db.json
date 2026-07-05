@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Test",
+    "email": "test2@test.com",
+    "phone": "",
+    "password": "123456"
+  },
+  {
+    "id": 2,
+    "name": "Test User",
+    "email": "test@example.com",
+    "phone": "1234567890",
+    "password": "test123"
+  },
+  {
+    "id": 3,
+    "name": "sai kumar",
+    "email": "polimerisaikumar23052000@gmail.com",
+    "phone": "8978761548",
+    "password": "Test@123"
+  },
+  {
+    "id": 4,
+    "name": "Test",
+    "email": "test@gmail.com",
+    "phone": "8978761548",
+    "password": "Test@123"
+  }
+]

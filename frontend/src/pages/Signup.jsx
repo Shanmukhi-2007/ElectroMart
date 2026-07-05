@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Signup.css";
 import { Link, useNavigate } from "react-router-dom";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api/auth";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 function Signup() {
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ function Signup() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_URL}/signup`, {
+      const response = await fetch(`${API_URL}/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
